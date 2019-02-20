@@ -40,6 +40,6 @@ class STV(voters: Buffer[Voter], seats: Int) {
 
 		}
 
-		println(firstVotes.distinct)
+		firstVotes.distinct
 	}
 }

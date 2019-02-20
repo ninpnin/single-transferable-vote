@@ -12,5 +12,6 @@ object Main extends App {
 	println(voters)
 
 	val election = new STV(voters, 3)
-	election.calculateWinners
+	val electorate = election.calculateWinners
+	println("Winners are " + electorate.map(_.toString).reduce(_ + ", " + _))
 }
